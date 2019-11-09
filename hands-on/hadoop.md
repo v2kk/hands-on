@@ -8,7 +8,7 @@ In this lab, you will:
 
 ## Step #01: Prerequsities
 
-- Install Java: [follow this instruction](!https://github.com/vinhdangphuc/hands-on/blob/master/hands-on/java.md)
+- [Install Java](!https://github.com/vinhdangphuc/hands-on/blob/master/hands-on/java.md)
 - Install Open SSH server
 
 ```
