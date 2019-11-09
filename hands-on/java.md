@@ -10,11 +10,8 @@ cd /opt/java
 
 Download jdk binary
 
-https://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html
-jdk-8u231-linux-x64.tar.gz
-
 ```
-https://download.oracle.com/otn/java/jdk/8u231-b11/5b13a193868b4bf28bcb45c792fce896/jdk-8u231-linux-x64.tar.gz?AuthParam=1573262681_44939675a9ad255fdf62068c1eaff434
+scp member1@118.68.170.134:/opt/jdk-8u231-linux-x64.tar.gz .
 ```
 
 Extract binary 

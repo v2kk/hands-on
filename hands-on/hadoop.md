@@ -8,7 +8,7 @@ In this lab, you will:
 
 ## Step #01: Prerequsities
 
-- Install Java: [follow this instruction](!https://google.com )
+- Install Java: [follow this instruction](!https://github.com/vinhdangphuc/hands-on/blob/master/hands-on/java.md)
 - Install Open SSH server
 
 ```
@@ -33,7 +33,17 @@ cd /tmp/hadoop
 
 ```
 wget https://archive.apache.org/dist/hadoop/core/hadoop-3.1.1/hadoop-3.1.1.tar.gz
+```
 
+Or
+
+```
+scp member1@118.68.170.134:/opt/hadoop-3.1.1.tar.gz .
+```
+
+Extract hadoop binary
+
+```
 tar -vzxf hadoop-3.1.1.tar.gz
 cd hadoop-3.1.1/
 
@@ -123,10 +133,16 @@ Edit yarn-site.xml
 
 ### 4.3 Format Namenode
 
+Move to bin folder
+
+```
+cd $HADOOP_HOME/bin
+```
+
 To delete all metadata on Namenode, all the information on the datanodes will be deleted and they can be reused for new data
 
 ```
-hdfs namenode -format
+./hdfs namenode -format
 ```
 
 Sample output:
@@ -161,7 +177,7 @@ SHUTDOWN_MSG: Shutting down NameNode at vinhdp/127.0.1.1
 
 ## Step #05: Start Hadoop Cluster
 
-Now start the Hadoop
+Move to sbin folder
 
 ```
 cd $HADOOP_HOME/sbin/
@@ -178,6 +194,12 @@ Starting datanodes
 Starting secondary namenodes [vinhdp]
 ```
 
+Check if HDFS is running
+
+```
+
+```
+
 Start YARN
 
 ```
@@ -188,11 +210,17 @@ Starting resourcemanager
 Starting nodemanagers
 ```
 
+Check if YARN is running
+
+```
+
+```
+
 ## Step #07: Access Hadoop Services in Browser
 
 ### 7.1 HDFS Name Node
 
-http://localhost:9864/datanode.html
+http://localhost:9870
 
 ### 7.2 YARN Resource Manager
 
