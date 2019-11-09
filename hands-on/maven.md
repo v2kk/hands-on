@@ -30,8 +30,16 @@ tar -vzxf apache-maven-3.6.1-bin.tar.gz
 ## Step 04: Add MAVEN_HOME to the end of /etc/profile (system wise)
 
 ```
+vi /etc/profile
+
 export MAVEN_HOME=/opt/mvn/apache-maven-3.6.1
 export PATH=$PATH:$MAVEN_HOME/bin
+```
+
+Apply environment
+
+```
+. /etc/profile
 ```
 
 ## Step 05: Test if Maven is running

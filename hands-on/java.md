@@ -20,13 +20,19 @@ Extract binary
 tar -vzxf jdk-8u231-linux-x64.tar.gz
 ```
 
-Export environment variable
+Export environment variable in the end of file
 
 ```
 vi /etc/profile
 
 export JAVA_HOME=/opt/java/jdk1.8.0_231/
 export PATH=$PATH:$JAVA_HOME/bin
+```
+
+Apply environment
+
+```
+. /etc/profile
 ```
 
 Test java
