@@ -40,3 +40,10 @@ Test java
 java -version
 ```
 
+Output should be
+
+```
+java version "1.8.0_231"
+...
+```
+
