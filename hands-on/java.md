@@ -1,5 +1,5 @@
 
-Intall JAVA
+# Intall JAVA
 
 Create directory
 
