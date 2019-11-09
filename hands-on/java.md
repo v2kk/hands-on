@@ -1,5 +1,5 @@
 
-# Intall JAVA
+# Intall JAVA (sudo required)
 
 Create directory
 
