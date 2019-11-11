@@ -1,0 +1,3 @@
+X B B
+C B A
+X A C

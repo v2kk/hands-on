@@ -1,0 +1,13 @@
+0000000000000000000000000000000000000000 09caf5c3e339d3018e654f56d99b46fc800dfa90 Vinh Dang <vinhdangphuc@gmail.com> 1572794562 +0700	clone: from git@github.com:vinhdangphuc/labs-mapreduce.git
+09caf5c3e339d3018e654f56d99b46fc800dfa90 a68e1234d57d914c3e5d3bcdfcef05754598dba1 Vinh Dang <vinhdangphuc@gmail.com> 1573221730 +0700	commit: Initialize project
+a68e1234d57d914c3e5d3bcdfcef05754598dba1 a68e1234d57d914c3e5d3bcdfcef05754598dba1 Vinh Dang <vinhdangphuc@gmail.com> 1573221826 +0700	reset: moving to HEAD
+a68e1234d57d914c3e5d3bcdfcef05754598dba1 0e3b652f76d3f428654b6374dff385ad592ad5aa Vinh Dang <vinhdangphuc@gmail.com> 1573221840 +0700	commit: Initialize project
+0e3b652f76d3f428654b6374dff385ad592ad5aa 336a600e3dca25da71dc73ffb30b1755adb62286 Vinh Dang <vinhdangphuc@gmail.com> 1573222032 +0700	commit: Remove wrong commit files
+336a600e3dca25da71dc73ffb30b1755adb62286 1230e817d5043b8819263604ac5d53295b5fab9e Vinh Dang <vinhdangphuc@gmail.com> 1573223950 +0700	commit: Change pom artifact
+1230e817d5043b8819263604ac5d53295b5fab9e 90d332052ac9264adacfab9f034c041f2ecc74c2 Vinh Dang <vinhdangphuc@gmail.com> 1573229328 +0700	commit: Rewrite plain java: calc new users
+90d332052ac9264adacfab9f034c041f2ecc74c2 b76e5502c980449b99dce7c728d26a2f7290bf1d Vinh Dang <vinhdangphuc@gmail.com> 1573302688 +0700	commit: Fix README
+b76e5502c980449b99dce7c728d26a2f7290bf1d ccc23de289edb41875a6b2c442e3892c055c91fc Vinh Dang <vinhdangphuc@gmail.com> 1573302981 +0700	commit: Fix README
+ccc23de289edb41875a6b2c442e3892c055c91fc 95b7bea259a7825da58b048f2da9d75c175e3f61 Vinh Dang <vinhdangphuc@gmail.com> 1573304098 +0700	commit: Add link to setup
+95b7bea259a7825da58b048f2da9d75c175e3f61 aade764c25a5b20ba862a84c8e71654b769aa2b2 Vinh Dang <vinhdangphuc@gmail.com> 1573304351 +0700	commit: Fix link
+aade764c25a5b20ba862a84c8e71654b769aa2b2 977dde9dbe33be399b95144c2465bbf6e308a478 Vinh Dang <vinhdangphuc@gmail.com> 1573305482 +0700	commit: Fix link
+977dde9dbe33be399b95144c2465bbf6e308a478 2d7f034f449c07fc79404e52ef8692dd85ddb5cc Vinh Dang <vinhdangphuc@gmail.com> 1573308770 +0700	commit: Fix link
