@@ -1,5 +1,6 @@
 package vn.fpt.spark
 
+import org.apache.spark.rdd.RDD
 import org.apache.spark.{SparkConf, SparkContext}
 
 object WordCount {
@@ -14,12 +15,12 @@ object WordCount {
         val outFile = args(1)
 
         // load the data as text
-        val textFile = sc.textFile(inFile)
+        val textFile: RDD[String] = sc.textFile(inFile)
 
         textFile
         .map(line => line.split("\\s+"))
         .flatMap(x => x)
-        .map(word => (word, 1))
+        .map(word => (word, 1)) // key, value
         .reduceByKey((a, b) => a + b)
         .saveAsTextFile(outFile)
 
