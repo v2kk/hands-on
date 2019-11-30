@@ -4,7 +4,8 @@ import scala.io.Source
 object NewUsersCalculation {
     def main(args: Array[String]): Unit = {
 
-        val lines = Source.fromFile("../sample/stackoverflow_users.csv").getLines().toArray
+        val lines = Source.fromFile("../sample/stackoverflow_users.csv")
+            .getLines().toArray
         val results = lines.drop(1)
         .map(line => {
             val arr = line.split(",")

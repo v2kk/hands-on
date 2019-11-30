@@ -22,7 +22,9 @@ object WordCount {
         .flatMap(x => x)
         .map(word => (word, 1)) // key, value
         .reduceByKey((a, b) => a + b)
-        .saveAsTextFile(outFile)
+        //.saveAsTextFile(outFile)
+            .count
+        Thread.sleep(5 * 60 * 1000)
 
         sc.stop()
     }
