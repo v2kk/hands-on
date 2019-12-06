@@ -49,20 +49,27 @@ object ApacheAccessParser {
   def main(args: Array[String]): Unit = {
 
     // create spark context
-    val conf = new SparkConf().setAppName("Word Count")
+    val conf = new SparkConf().setAppName("Word Count").setMaster("local[*]")
     val sc = new SparkContext(conf)
 
     // input file location
     val inFile = "/home/vinhdp/workspaces/fpt/training/sample/access-small.log"
-    val outFile = args(1)
+    //val outFile = args(1)
 
     // load the data as text
     val textFile: RDD[String] = sc.textFile(inFile)
 
-    textFile
+    val rdd = textFile
       .map(line => ApacheAccess(line))
       .filter(_.isDefined)
       .map(_.get)
+      .map(a => a.date.substring(0, 11) -> a.ip)
+      .distinct
+      .map(x => x._1 -> 1)
+      .reduceByKey(_ + _)
+      .take(10)
+      .foreach(println)
+
 
 
     sc.stop()
